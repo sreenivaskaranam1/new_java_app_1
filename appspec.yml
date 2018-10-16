@@ -3,3 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/opt/javacode
+ApplicationStart:
+    - location: /startapplication.sh
+      timeout: 300
+      runas: root
